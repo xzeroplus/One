@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1DC0C91E800B3E00800CEE /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1DC0C71E800B3E00800CEE /* TextViewController.m */; };
+		9F1DC0CA1E800B3E00800CEE /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1DC0C81E800B3E00800CEE /* TextViewController.xib */; };
 		9F78F45E1E7F60CD006E1412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78F45D1E7F60CD006E1412 /* main.m */; };
 		9F78F4611E7F60CD006E1412 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78F4601E7F60CD006E1412 /* AppDelegate.m */; };
 		9F78F4641E7F60CD006E1412 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78F4631E7F60CD006E1412 /* MasterViewController.m */; };
@@ -16,6 +18,8 @@
 		9F78F46F1E7F60CD006E1412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F78F46D1E7F60CD006E1412 /* LaunchScreen.storyboard */; };
 		9F78F47A1E7F60CD006E1412 /* OneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78F4791E7F60CD006E1412 /* OneTests.m */; };
 		9F78F4851E7F60CD006E1412 /* OneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F78F4841E7F60CD006E1412 /* OneUITests.m */; };
+		9FD876501E7F678000AAA00D /* ViewList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD8764F1E7F678000AAA00D /* ViewList.plist */; };
+		9FD876591E7FD01B00AAA00D /* LabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD876581E7FD01B00AAA00D /* LabelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F1DC0C61E800B3E00800CEE /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		9F1DC0C71E800B3E00800CEE /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		9F1DC0C81E800B3E00800CEE /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		9F78F4591E7F60CC006E1412 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F78F45D1E7F60CD006E1412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F78F45F1E7F60CD006E1412 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +61,9 @@
 		9F78F4801E7F60CD006E1412 /* OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F78F4841E7F60CD006E1412 /* OneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneUITests.m; sourceTree = "<group>"; };
 		9F78F4861E7F60CD006E1412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD8764F1E7F678000AAA00D /* ViewList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ViewList.plist; sourceTree = "<group>"; };
+		9FD876571E7FD01B00AAA00D /* LabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelViewController.h; sourceTree = "<group>"; };
+		9FD876581E7FD01B00AAA00D /* LabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +118,14 @@
 				9F78F4601E7F60CD006E1412 /* AppDelegate.m */,
 				9F78F4621E7F60CD006E1412 /* MasterViewController.h */,
 				9F78F4631E7F60CD006E1412 /* MasterViewController.m */,
+				9FD8764F1E7F678000AAA00D /* ViewList.plist */,
 				9F78F4651E7F60CD006E1412 /* DetailViewController.h */,
 				9F78F4661E7F60CD006E1412 /* DetailViewController.m */,
+				9FD876571E7FD01B00AAA00D /* LabelViewController.h */,
+				9FD876581E7FD01B00AAA00D /* LabelViewController.m */,
+				9F1DC0C61E800B3E00800CEE /* TextViewController.h */,
+				9F1DC0C71E800B3E00800CEE /* TextViewController.m */,
+				9F1DC0C81E800B3E00800CEE /* TextViewController.xib */,
 				9F78F4681E7F60CD006E1412 /* Main.storyboard */,
 				9F78F46B1E7F60CD006E1412 /* Assets.xcassets */,
 				9F78F46D1E7F60CD006E1412 /* LaunchScreen.storyboard */,
@@ -252,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F78F46F1E7F60CD006E1412 /* LaunchScreen.storyboard in Resources */,
+				9F1DC0CA1E800B3E00800CEE /* TextViewController.xib in Resources */,
 				9F78F46C1E7F60CD006E1412 /* Assets.xcassets in Resources */,
 				9F78F46A1E7F60CD006E1412 /* Main.storyboard in Resources */,
+				9FD876501E7F678000AAA00D /* ViewList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F78F4611E7F60CD006E1412 /* AppDelegate.m in Sources */,
+				9FD876591E7FD01B00AAA00D /* LabelViewController.m in Sources */,
 				9F78F4641E7F60CD006E1412 /* MasterViewController.m in Sources */,
+				9F1DC0C91E800B3E00800CEE /* TextViewController.m in Sources */,
 				9F78F45E1E7F60CD006E1412 /* main.m in Sources */,
 				9F78F4671E7F60CD006E1412 /* DetailViewController.m in Sources */,
 			);
@@ -513,6 +533,7 @@
 				9F78F48B1E7F60CD006E1412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F78F48C1E7F60CD006E1412 /* Build configuration list for PBXNativeTarget "OneTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +542,7 @@
 				9F78F48E1E7F60CD006E1412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F78F48F1E7F60CD006E1412 /* Build configuration list for PBXNativeTarget "OneUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +551,7 @@
 				9F78F4911E7F60CD006E1412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

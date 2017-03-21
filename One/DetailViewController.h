@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LabelViewController.h"
+#import "TextViewController.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) NSDate *detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong,nonatomic)NSString *selectView;
 
 @end
 
