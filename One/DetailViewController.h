@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LabelViewController.h"
-#import "TextViewController.h"
+
+
 
 @interface DetailViewController : UIViewController
 

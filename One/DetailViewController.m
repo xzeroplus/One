@@ -7,6 +7,12 @@
 //
 
 #import "DetailViewController.h"
+#import "LabelViewController.h"
+#import "TextViewController.h"
+#import "SwitchViewController.h"
+#import "WKWebViewController.h"
+#import "AlertViewController.h"
+#import "ActivityIndicatorViewController.h"
 
 @interface DetailViewController ()
 
@@ -26,6 +32,22 @@
         TextViewController *textViewController = [[TextViewController alloc]init];
         
         childViewConrtorller = (UIViewController*)textViewController;
+    }else if([self.selectView  isEqual: @"Switch"]){
+        SwitchViewController *switchViewController = [[SwitchViewController alloc]init];
+        
+        childViewConrtorller = switchViewController;
+    }else if ([self.selectView isEqualToString:@"WKWeb"]){
+        WKWebViewController *wkWeb = [[WKWebViewController alloc]init];
+        
+        childViewConrtorller = wkWeb;
+    }else if([self.selectView isEqualToString:@"Alert"]){
+        AlertViewController *Alert = [[AlertViewController alloc]init];
+        
+        childViewConrtorller = Alert;
+    }else if([self.selectView isEqualToString:@"ActivityIndicator"]){
+        ActivityIndicatorViewController *activity = [[ActivityIndicatorViewController alloc]init];
+        
+        childViewConrtorller = activity;
     }
     
     

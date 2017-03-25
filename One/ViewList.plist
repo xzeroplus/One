@@ -4,5 +4,9 @@
 <array>
 	<string>Label</string>
 	<string>Text</string>
+	<string>Switch</string>
+	<string>WKWeb</string>
+	<string>Alert</string>
+	<string>ActivityIndicator</string>
 </array>
 </plist>

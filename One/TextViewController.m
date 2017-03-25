@@ -8,7 +8,9 @@
 
 #import "TextViewController.h"
 
-@interface TextViewController ()
+@interface TextViewController ()<UITextViewDelegate,UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *TextView;
+@property (weak, nonatomic) IBOutlet UITextField *TextField;
 
 @end
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.TextField.delegate = self;
+    self.TextView.delegate = self;
+    
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    tap1.cancelsTouchesInView = NO;
+    
+    [self.view addGestureRecognizer:tap1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +33,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return TRUE;
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    if([text isEqualToString:@"\n"]){
+        [textView resignFirstResponder];
+        
+        return false;
+    }
+    return TRUE;
+}
+
+- (void)viewTapped:(UITapGestureRecognizer*)tap1{
+    [self.view endEditing:TRUE];
+}
 /*
 #pragma mark - Navigation
 
